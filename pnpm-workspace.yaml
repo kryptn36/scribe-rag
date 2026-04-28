@@ -1,0 +1,45 @@
+packages:
+  - apps/*
+  - packages/*
+
+catalog:
+  # Icons
+  '@tailwindcss/postcss': ^4
+  '@types/fs-extra': ^11.0.4
+
+  # Types
+  '@types/node': ^24.12.2
+  '@types/react': ^19
+  '@types/react-dom': ^19
+
+  # Auth
+  '@supabase/supabase-js': ^2.48.0
+  '@supabase/ssr': ^0.5.2
+  del-cli: ^7.0.0
+
+  # Utilities
+  dotenv: ^17.4.2
+  fs-extra: ^11.3.4
+
+  # Frameworks
+  next: 16.2.4
+  react: 19.2.4
+  react-dom: 19.2.4
+
+  # Styling
+  tailwindcss: ^4.2.4
+  typescript: ^6.0.3
+  vite: npm:@voidzero-dev/vite-plus-core@0.1.19
+  vite-plus: 0.1.19
+
+  # Testing
+  zx: ^8.8.5
+
+overrides:
+  vite: 'catalog:'
+
+peerDependencyRules:
+  allowAny:
+    - vite
+  allowedVersions:
+    vite: '*'

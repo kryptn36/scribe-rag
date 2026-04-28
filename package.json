@@ -1,0 +1,40 @@
+{
+  "name": "scribe",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bootstrap": "./scripts/bootstrap.ts",
+    "clean": "./scripts/clean.ts",
+    "clean:node_modules": "./scripts/clean.ts --node_modules",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "format": "vp fmt .",
+    "format:check": "vp fmt --check .",
+    "typecheck": "turbo run typecheck",
+    "db:generate": "pnpm --filter rag-web db:generate",
+    "db:push": "pnpm --filter rag-web db:push",
+    "db:migrate": "pnpm --filter rag-web db:migrate",
+    "prepare": "vp config"
+  },
+  "devDependencies": {
+    "@repo/config-format": "workspace:*",
+    "@repo/config-lint": "workspace:*",
+    "@repo/config-typescript": "workspace:*",
+    "@types/fs-extra": "catalog:",
+    "@types/node": "catalog:",
+    "del-cli": "catalog:",
+    "dotenv": "catalog:",
+    "fs-extra": "catalog:",
+    "turbo": "^2.9.6",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-plus": "catalog:",
+    "zx": "catalog:"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "packageManager": "pnpm@10.33.1"
+}

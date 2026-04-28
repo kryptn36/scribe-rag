@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@repo/config-typescript/nextjs.json",
+  "compilerOptions": {
+    // Duplicated here because of shadcn cli not being able to resolve paths of base config
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}

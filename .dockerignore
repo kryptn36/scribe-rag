@@ -1,0 +1,48 @@
+# Docker ignore file for optimized builds
+
+# Dependencies
+node_modules
+**/node_modules
+
+# Build outputs
+.svelte-kit
+**/dist
+**/build
+**/.turbo
+
+# Development files
+.env
+.env.*
+!.env.example
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Testing
+coverage
+**/coverage
+playwright-report
+test-results
+
+# Documentation
+*.md
+!README.md
+
+# Misc
+.DS_Store
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Claude/AI
+.claude
+.agent
+.simple-task-master
+specs
